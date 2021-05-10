@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @Setter
 @Entity
-public class AppUser {
+public class AppUser{
     @SequenceGenerator(name="user_sequence_generator",
             sequenceName ="user_sequence",allocationSize = 1)
     @Id
