@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    password: lailaplpl
+    url: jdbc:postgresql://localhost:5432/testfl
+    username: postgres
+  flyway:
+    baseline-version: 1
+    enabled: true
+    encoding: UTF-8
+    locations: classpath:db
+    password: ${spring.datasource.password}
+    sql-migration-prefix: V
+    sql-migration-suffixes: .sql
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    baseline-on-migrate: true
+    out-of-order: true
+    ignore-missing-migrations: true
